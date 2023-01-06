@@ -1,14 +1,12 @@
 import { useState } from "react";
-import NavBar from "../components/NavBar";
+import Seo from "../components/Seo";
 
 export default function Potato() {
   const [counter, setCounter] = useState(0);
   return (
-    <>
-      <div>
-        <h1> Hellow {counter}</h1>
-      </div>
-      <button onClick={() => setCounter((prev) => prev + 1)}> + </button>
-    </>
+    <div>
+      <Seo title={"About"} />
+      <h1>About</h1>
+    </div>
   );
 }
